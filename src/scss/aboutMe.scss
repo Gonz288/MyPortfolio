@@ -1,0 +1,135 @@
+//Card AboutMe
+$card-bg: #333;
+$card-color: #fff;
+$card-border-width: 0px;
+$card-spacer-x: 150px;
+$card-spacer-y: 150px;
+
+#aboutMe{
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .title{
+        position: relative;
+        color: #fff;
+        background-image: linear-gradient(#fff,#fff);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 2.1rem;
+        font-weight: bold;
+        font-style: italic;
+        span{
+            color: $color-principal;
+        }
+    }
+    .title::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 165px;
+        height: 3px;
+        background: $color-principal;
+        border-radius: 10%;
+        box-shadow: 0 0 10px $color-principal,
+                    0 0 20px $color-principal,
+                    0 0 40px $color-principal;
+    }
+    .card{
+        background: rgb(0, 0, 0);
+        border: none;
+        text-align: center;
+        .card-title{
+            display: inline;
+            color: #fff;
+            background-image: linear-gradient(#fff,#fff);
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            font-size: 1.7rem;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 3px;
+            transition: 500ms;
+        }
+        .card-title:hover{
+            color: $color-principal;
+        }
+        .card-title-orange{
+            display: inline;
+            color: $color-principal;
+            background-image: linear-gradient(#fff,#fff);
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            font-size: 1.7rem;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 3px;
+            transition: 500ms;
+        }
+        .card-title-orange:hover{
+            color: #fff;
+        }
+        .card-text{
+            padding: 10px;
+            color: #fff;
+            font-size: 1.25rem;
+        }
+    }
+
+    img{
+        height: 35rem;
+        border-radius: 05%;
+        transform: perspective(800px) rotateY(-10deg);
+        transition: 0.5s;
+        -webkit-box-reflect: below 5px linear-gradient(transparent,transparent,rgba(0, 0, 0, 0.182));
+        z-index: 0;
+    }
+    img:hover{
+        transform: perspective(800px) rotateY(0deg);
+    }
+}
+
+@media screen and (max-width: 1000px){ 
+    #aboutMe{
+        .card{
+            .card-title, .card-title-orange{
+                font-size: 1.5rem;
+            }
+            .card-text{
+                font-size: 1.1rem;
+            }
+        }
+        img{
+            height: 30rem;
+        }
+    }
+}
+@media screen and (max-width: 767px){ 
+    #aboutMe{
+        height: auto;
+        padding: 50px 0px 50px 0px;
+    }
+}
+@media screen and (max-width: 558px){ 
+    #aboutMe{
+        img{
+            height: 25rem;
+        }
+    }
+}
+
+@media screen and (max-height:818px){
+    #aboutMe{
+        overflow: scroll;
+    }
+}
+
+
+
+
