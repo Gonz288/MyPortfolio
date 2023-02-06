@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c5d3e97c41.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/563e341526.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Mi Portafolio</title>
 </head>
 <body>
     <section id="home">
         <div class="background">
-            <nav class="navbar navbar-expand-lg" data-aos="fade-down">
+            <nav class="navbar navbar-expand-xl" data-aos="fade-down">
                 <a href="#" class="navbar-brand"><span>Mi </span>Portafolio</a>
-                <button class="navbar-toggler" id="boton" data-target="#menu" data-toggle="collapse" type="button">
+                <button class="navbar-toggler" id="toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>                
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="#home" class="nav-link">Inicio</a>
@@ -44,7 +45,7 @@
                     <h2><span>Hola, </span>Bienvenido</h2>
                     <h2>a mi <span>Portafolio</span></h2>
                 </div>
-                    <a href="src/Copia de Curriculum Vitae.pdf" target="_blank" class="btn neon-button" data-aos="fade-up">Descargar CV</a>
+                    <a href="#" target="_blank" class="btn neon-button" data-aos="fade-up">Descargar CV</a>
                     <a href="#contact" class="btn neon-button" data-aos="fade-up">Contacto</a>
             </div>
         </div>
@@ -52,19 +53,19 @@
 
     <section id="aboutMe">
         <div class="container-xl pb-3 container-aboutMe">
-                <h2 class="title" data-aos="fade-down"><span>Sobre</span> Mí</h2>
+            <h2 class="title" data-aos="fade-down"><span>Sobre</span> Mí</h2>
             <div class="card">
                 <div class="row g-0">
-                    <div class="col-md-7 align-self-center" data-aos="fade-right">
+                    <div class="col-md-7 align-self-center" data-aos="fade-left">
                         <div class="card-body p-0">
-                            <h5 class="card-title mt-3">Tecnico IT |</h5><h5 class="card-title-orange">| Desarrollador Full Stack</h5>
-                            <p class="card-text mt-3">Mi nombre es Gonzalo y tengo 20 años. Soy Técnico en Informatica y Desarrollador Full Stack. Una persona apasionada por la tecnologia y la informatica. 
+                            <h5 class="card-title mt-3">Tecnico IT |</h5><h5 class="card-title-orange" data-aos="zoom-in">| Desarrollador Full Stack</h5>
+                            <p class="card-text mt-3">Mi nombre es Gonzalo y tengo 20 años. Soy Técnico en Informatica y Desarrollador Full Stack. Una     persona apasionada por la tecnologia y la informatica. 
                                 Mi primer contacto con la programacion fue en 4to año de secundaria, aprendiendo la logica de la programacion, con algoritmos, pseudocodigos, y luego con el querido lenguaje C++, al mismo tiempo en otra materia, HTML5 y CSS. En 7mo año me dieron la oportunidad de desarrollar el sitio web de mi escuela como practicas profesionalizantes (ya que no tenia una), al mismo tiempo que me enseñaban Bootstrap, PHP y MySql, e ir implementando estas tecnologias al sitio.<br>
                                 Actualmente estoy haciendo un curso como desarrollador full stack con la tecnologia "MERN", para seguir ampliando mis conocimientos en las tecnologias mas modernas.
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-5" data-aos="fade-left">
+                    <div class="col-md-5" data-aos="fade-right">
                         <img src="src/img/perfil.jpg" class="img-fluid">
                     </div>
                 </div>
@@ -181,46 +182,54 @@
     </section>
 
     <section id="proyects">
-        <h2 class="proyects-title" data-aos="fade-down"><span>Mis </span>Proyectos</h2>
+        <h2 class="proyects-title"><span>Mis </span>Proyectos</h2>
         <div class="timeline">
-            <div class="containers left" data-aos="fade-right">
-                <div class="content">
+            <div class="containers left">
+                <div class="content" data-aos="fade-left">
                     <h2>Practicas Profesionalizantes</h2>
                     <img src="src/img/proyect1.png">
                     <p>
-                        Practicas Profesionalizantes por un año entero (2020), en el desarrollo de un sitio web de mi escuela desde cero, sobre información del establecimiento, con un "CRUD" de usuarios y un Sistema Gestor de archivos. 
+                        Practicas Profesionalizantes por un año entero (2020), en el desarrollo de un sitio web de mi escuela desde cero, sobre información del establecimiento, con un "CRUD" de usuarios y un Sistema Gestor de archivos.
                     </p>
-                    <p>
-                        <span>Tecnologías Aplicadas:</span> HTML5, CSS3, JS, Bootstrap, PHP (POO) y MySQL.
-                    </p>
-                    <a href="https://github.com/Gonz288/EscuelaTecnica2" target="_blank"><button class="btn"><i class="fa-brands fa-github"></i> GitHub</button></a>
-                    <a href="escuelatecnican2/index.html" target="_blank"><button class="btn"><i class="fa-solid fa-house"></i> Ver</button></a>
-                </div>
-            </div>
-            <div class="containers right" data-aos="fade-left">
-                <div class="content">
-                    <h2>Portafolio</h2>
-                    <img src="src/img/proyect2.png">
-                    <p>
-                        Creacion de un portafolio web para la visualizacion de mis proyectos.
-                    </p>
-                    <p>
-                        <span>Tecnologías Aplicadas:</span> HTML5, CSS3, SASS, JS, Bootstrap.
-                    </p>
-                    <a href="https://github.com/Gonz288/EscuelaTecnica2" target="_blank"><button class="btn"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    <p><span>Tecnologías Aplicadas:</span> HTML5, CSS3, JS, Bootstrap, PHP (POO) y MySQL.</p>
+                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i> GitHub</button></a>
                     <a href="#home"><button class="btn"><i class="fa-solid fa-house"></i> Ver</button></a>
                 </div>
             </div>
-            <div class="containers left" data-aos="fade-right">
-                <div class="content">
-                    <h2>Proximo Proyecto React JS (2022)</h2>
+            <div class="containers right">
+                <div class="content" data-aos="fade-right">
+                    <h2>Desarrollo Web -Mi Portafolio</h2>
+                    <img src="src/img/proyect2.png">
                     <p>
-                        <span>Tecnologías que se van a aplicar:</span> HTML5, CSS3, SASS, Bootstrap, JS, React JS...
+                        Proyecto Final Desarrollo Web, y la creacion de un portafolio para la visualizacion de mis proyectos personales.
+                    </p>
+                    <p><span>Tecnologías Aplicadas:</span> HTML5, CSS3, SASS, JS y Bootstrap.</p>
+                    <a href="#"><button class="btn"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    <a href="#home"><button class="btn"><i class="fa-solid fa-house"></i> Ver</button></a>
+                </div>
+            </div>
+            <div class="containers left">
+                <div class="content" data-aos="fade-left">
+                    <h2>JavaSript -Tienda de Ropa</h2>
+                    <img src="src/img/proyect3.png">
+                    <p>
+                        Proyecto Final JavaScript, Mini tienda de ropa, en la cual el usuario puede comprar, actualizar, agregar y eliminar productos. Ademas de otras funcionalidades: Buscador, ordenamiento, agregar saldo, y "DarkMode".
+                    </p>
+                    <p><span>Tecnologías Aplicadas:</span> HTML5, CSS3, Bootstrap, JS, JSON, AJAX y API. </p>
+                    <a href="https://github.com/Gonz288/ProyectoFinalJS-Gonzalez"><button class="btn"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    <a href="https://gonz288.github.io/ProyectoFinalJS-Gonzalez/"><button class="btn"><i class="fa-solid fa-house"></i> Ver</button></a>
+                </div>
+            </div>
+            <div class="containers right pb-5">
+                <div class="content" data-aos="fade-right">
+                    <h2>Proximo Proyecto React JS (Enero 2023)</h2>
+                    <p>
+                        <span>Tecnologías que se van a aplicar:</span> HTML5, CSS3, SASS, Bootstrap, JS, React JS, NodeJS, APIs...
                     </p>
                 </div>
             </div>
-            <div class="containers right pb-5" data-aos="fade-left">
-                <div class="content">
+            <div class="containers left pb-5">
+                <div class="content" data-aos="fade-left">
                     <h2>Proximo Proyecto Ecommerce (2022-2023)</h2>
                     <p>
                         <span>Tecnologías que se van a aplicar:</span> HTML5, CSS3, SASS, Bootstrap, JS, React JS, NodeJS, Express, MongoDB, APIs...
@@ -234,9 +243,9 @@
         <footer>
             <div class="container pt-4">
                 <h2 data-aos="fade-down">Contacto</h2>
-                <div class="row py-4" >
+                <div class="row py-4">
                     <div class="col-lg-7">
-                        <div class="contact-form pt-2" data-aos="fade-right">
+                        <div class="contact-form pt-2" data-aos="fade-left">
                             <h4 class="mb-5">Enviar Mensaje</h4>
                             <form action="correo.php" method="post">
                                 <div class="mb-3">
@@ -258,35 +267,35 @@
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                                     <textarea class="form-control" id="message" rows="3" name="message"></textarea>
-                                  </div>
+                                </div>
                                 <button type="submit" class="btn" name="submit">Enviar</button>
                                 </form>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="contact-info pt-2">
-                            <div class="div-info" data-aos="fade-down">
+                        <div class="contact-info pt-2" data-aos="fade-right">
+                            <div class="div-info">
                                 <h4>Mas Informacion</h4>
                                 <ul class="info-footer-list">
-                                    <li><span><i class="fas fa-map-marker-alt"></i></span> Buenos Aires, Villa de Mayo</li>
+                                    <li><span><i class="fas fa-map-marker-alt"></i></span> Buenos Aires, Argentina</li>
                                     <li><span><i class="fa-solid fa-envelope"></i></span> gonza_gonzalez28@hotmail.com</li>
-                                    <li><span><i class="fa-brands fa-whatsapp"></i></span> 1157221824 (Whatsapp) </li>
+                                    <li><span><i class="fa-brands fa-whatsapp"></i></span> 1157221824</li>
                                 </ul>
                             </div>
-                            <div class="div-redes pt-2" data-aos="fade-up">
+                            <div class="div-redes pt-2">
                                 <h4>Redes</h4>
                                 <ul class="social-footer-list">
                                     <li class="social-footer-item">
-                                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                                        <a href="https://www.instagram.com/gonnz28/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
                                     </li>
                                     <li class="social-footer-item">
-                                        <a href="https://www.instagram.com/gonnz28" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/gonz288"><i class="fa-brands fa-linkedin"></i></a>
                                     </li>
                                     <li class="social-footer-item">
-                                        <a href="https://www.linkedin.com/in/gonz288" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="https://github.com/Gonz288"><i class="fa-brands fa-github"></i></a>
                                     </li>
                                     <li class="social-footer-item">
-                                        <a href="https://github.com/Gonz288" target="blank"><i class="fa-brands fa-github"></i></a>
+                                        <a href="mailto:gonza_gonzalez28@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -300,17 +309,17 @@
     <div class="social" data-aos="fade-left">
         <input type="checkbox" id="btn-plus">
         <div class="redes">
-            <a href="#" target="blank" class="social_link">
-                <i class="fa-brands fa-telegram"></i>
-            </a>
-            <a href="https://www.instagram.com/gonnz28" target="blank" class="social_link">
+            <a href="https://www.instagram.com/gonnz28/?hl=es-la" class="social_link">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/in/gonz288" target="blank" class="social_link">
+            <a href="https://www.linkedin.com/in/gonz288" class="social_link">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com/Gonz288" target="blank" class="social_link">
+            <a href="https://github.com/Gonz288" class="social_link">
                 <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:gonza_gonzalez28@hotmail.com" class="social_link">
+                <i class="fa-solid fa-envelope"></i>
             </a>
         </div>
         <div class="btn-plus">
@@ -327,7 +336,7 @@
 
     <script src="src/changeColor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- Animation scroll-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
